@@ -36,7 +36,7 @@ export default async function Games({
     <div className="content">
       <h1>{capitalize(tt["games"])}</h1>
       <div className="cards-list">
-        {games.map((game) => (
+        {games.reverse().map((game) => (
           <GameCard key={game.slug} game={game} lang={lang} />
         ))}
       </div>
